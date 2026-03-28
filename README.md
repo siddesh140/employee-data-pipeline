@@ -1,5 +1,3 @@
-<img width="1620" height="656" alt="Gemini_Generated_Image_y044e3y044e3y044" src="https://github.com/user-attachments/assets/a8dbb5b2-3d99-4b88-9c54-01e1aea608bc" /><img width="1024" height="415" alt="image" src="https://github.com/user-attachments/assets/7afde101-f6fb-40f6-91d0-ce09410a8f40" /># 🚀 Employee Data Pipeline (PySpark + PostgreSQL + Docker)
-
 ## 📌 Project Overview
 
 This project demonstrates an end-to-end **Data Engineering Pipeline** that processes raw employee data using **PySpark**, performs data cleaning and transformation, and loads the processed data into a **PostgreSQL database**.
