@@ -16,10 +16,6 @@ PySpark (Cleaning & Transformation)
 PostgreSQL (Storage)
 ↑
 Docker (Environment Management)
-<img width="1620" height="656" alt="Gemini_Generated_Image_y044e3y044e3y044" src="https://github.com/user-attachments/assets/318c9837-d45f-4e25-a9c1-fe8dbd7cb59b" />
-
-
-
 
 ---
 
