@@ -1,4 +1,4 @@
-# 🚀 Employee Data Pipeline (PySpark + PostgreSQL + Docker)
+<img width="1620" height="656" alt="Gemini_Generated_Image_y044e3y044e3y044" src="https://github.com/user-attachments/assets/a8dbb5b2-3d99-4b88-9c54-01e1aea608bc" /><img width="1024" height="415" alt="image" src="https://github.com/user-attachments/assets/7afde101-f6fb-40f6-91d0-ce09410a8f40" /># 🚀 Employee Data Pipeline (PySpark + PostgreSQL + Docker)
 
 ## 📌 Project Overview
 
@@ -16,6 +16,9 @@ PySpark (Cleaning & Transformation)
 PostgreSQL (Storage)
 ↑
 Docker (Environment Management)
+<img width="1620" height="656" alt="Gemini_Generated_Image_y044e3y044e3y044" src="https://github.com/user-attachments/assets/318c9837-d45f-4e25-a9c1-fe8dbd7cb59b" />
+
+
 
 
 ---
@@ -46,6 +49,7 @@ employee-data-pipeline/
 │
 ├── docker-compose.yml
 └── README.md
+
 
 
 ---
@@ -83,28 +87,30 @@ employee-data-pipeline/
 ### 🔹 Step 1: Start Docker Containers
 ```bash
 docker compose up -d
-
 🔹 Step 2: Create Table in PostgreSQL
 docker exec -it postgres_db psql -U admin -d employee_db
 \i /path/to/create_table.sql
-
 🔹 Step 3: Run Spark Job
 docker exec -it spark_app spark-submit \
 --jars /home/jovyan/work/jars/postgresql-42.x.x.jar \
 /home/jovyan/work/scripts/spark_job.py
-
 🔹 Step 4: Verify Data
 docker exec -it postgres_db psql -U admin -d employee_db
 SELECT COUNT(*) FROM employees_clean;
+📊 Sample Output
 
-📊 Output
-Cleaned and transformed employee data
-Stored in PostgreSQL table: employees_clean
-Example result:
+After running the pipeline:
+
+SELECT COUNT(*) FROM employees_clean;
+
+Output:
+
 COUNT = 802
+🎯 Key Achievement
+
+Successfully processed messy raw data and loaded 802 cleaned records into PostgreSQL.
 
 🚧 Challenges Faced & Solutions
-
 | Problem                | Solution                                  |
 | ---------------------- | ----------------------------------------- |
 | Docker image issues    | Switched to stable PySpark image          |
@@ -115,7 +121,6 @@ COUNT = 802
 | Over-cleaning (0 rows) | Applied selective null filtering          |
 | Duplicate key error    | Deduplicated using email                  |
 | Column object error    | Correct use of `col()` and DataFrame APIs |
-
 
 🧠 Key Learnings
 Importance of data quality handling
@@ -132,3 +137,10 @@ Store data in data warehouse (Snowflake/BigQuery)
 
 👨‍💻 Author
 Siddesh Yerawar
+
+⭐ Support
+
+If you found this project useful, give it a ⭐ on GitHub!
+
+
+---
