@@ -7,6 +7,7 @@ The entire pipeline is containerized using **Docker**, ensuring consistency and 
 ---
 
 ## 🧠 Architecture
+
 CSV (Raw Data)
 
 ↓
@@ -20,6 +21,8 @@ PostgreSQL (Storage)
 ↑
 
 Docker (Environment Management)
+
+![Architecture Diagram](Gemini_Generated_Image_y044e3y044e3y044.png)
 
 ---
 
