@@ -8,12 +8,15 @@ The entire pipeline is containerized using **Docker**, ensuring consistency and 
 
 ## 🧠 Architecture
 CSV (Raw Data)
+
 ↓
 
 PySpark (Cleaning & Transformation)
+
 ↓
 
 PostgreSQL (Storage)
+
 ↑
 
 Docker (Environment Management)
