@@ -49,7 +49,7 @@ df_clean = df_clean.withColumn(
     to_date(col("hire_date"), "yyyy-MM-dd")
 )
 
-# Remove future hire_date (assignment requirement 🔥)
+# Remove future hire_date : assignment requirement
 df_clean = df_clean.filter(col("hire_date") <= current_date())
 
 # STEP 3: TRANSFORMATIONS
@@ -79,7 +79,7 @@ df_clean = df_clean \
     .withColumn("manager_id", col("manager_id").cast("int")) \
     .withColumn("tenure_years", col("tenure_years").cast("int"))
 
-# ✅ FINAL DEDUP (VERY IMPORTANT)
+# FINAL DEDUP 
 df_clean = df_clean.dropDuplicates(["email"])
 
 print("Cleaned Data:")
